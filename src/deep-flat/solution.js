@@ -1,10 +1,11 @@
 /** .........
- * Sum of two numbers.
+ * Unnesting the array.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {array} array - Array to unnesting.
+ * @returns {array} New unnested array.
  */
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
-};
+
+export const spreadFlatten = (array) => {
+    let flatArray = []; 
+    return flatArray.concat(...array); 
+  };

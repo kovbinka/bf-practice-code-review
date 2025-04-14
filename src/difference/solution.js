@@ -1,11 +1,10 @@
 /** .........
- * Sum of two numbers.
+ * Find Common Elements Between Two Arrays
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {array} num1 - The first array to filter.
+ * @param {array} num2 - The second array to find commons.
+ * @returns {array} The new filtered array.
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
-};
+export const filteredArray = (array1, array2) =>
+    array1.filter((value) => array2.includes(value));

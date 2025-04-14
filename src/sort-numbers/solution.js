@@ -1,11 +1,11 @@
-/** .........
- * Sum of two numbers.
+* Sorts an array of numbers.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {array} array - An array to sort.
+ * @returns {array} Returns new sorted array without NaN, Infinity, -Infinity.
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
+export const sortWithoutSpecialNumbers = (array) => {
+    return array
+        .filter((item) => Number.isFinite(item) && !isNaN(item))
+        .sort((a, b) => a - b);
 };
