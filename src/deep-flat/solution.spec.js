@@ -1,7 +1,4 @@
-const spreadFlatten = (array) => {
-    let flatArray = []; 
-    return flatArray.concat(...array); 
-};
+import { spreadFlatten } from './solution.js';
 
 describe('spreadFlatten', () => {
     test('should flatten a nested array by one level', () => {
